@@ -1,4 +1,4 @@
-module base
+module github.com/brokenjacky/base
 
 go 1.19
 
