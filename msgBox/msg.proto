@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option go_package = "./msgBox;msgBox";
+
+package msgBox;
+
+service MessageBox {
+    rpc UniMsg(MsgBody) returns (MsgBody) {}
+}
+
+message MsgBody {
+    string MsgType                = 1;
+    string UUID                = 2;
+    bytes PayLoad                 = 3;
+}
