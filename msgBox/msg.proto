@@ -13,3 +13,8 @@ message MsgBody {
     string UUID                = 2;
     bytes PayLoad                 = 3;
 }
+
+message MailReq {
+    int32 Type                = 1;
+    string Content                = 2;
+}
